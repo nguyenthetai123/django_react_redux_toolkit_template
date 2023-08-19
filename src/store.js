@@ -1,17 +1,13 @@
 
-import userreducer from './Slice/UserSlice';
-import productreducer from './Slice/productSlice';
-import orderreducer from './Slice/orderSlice';
-import { configureStore } from '@reduxjs/toolkit'
 
+import { configureStore } from '@reduxjs/toolkit'
+import userreducer from './Slice/userSlice'
 
 
 
 const store =configureStore({
     reducer:{
-        user:userreducer,
-        products:productreducer,
-        oders:orderreducer
+        user: userreducer
     }
 });
 export default store
